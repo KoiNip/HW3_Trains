@@ -1,0 +1,18 @@
+Create a confusion matrix:
+We need the correct y-values (Type of accident)
+We need to create a predicted y-value (Logistic Regression)
+Put these into a confusion matrix, display confusion matrix
+
+Q's:
+1) For this, we can remove all 0's from data and then do the regression with this data?
+2) Train_test_split takes X and y and splits both of them indavidually into train and test sets, can these be used as the correct and predicted values?
+	We use these values to train the model, that should answer the question.
+3) Do we need separate confusion matricies for type 1 and type two?
+4) Do I need to worry about training data recieving a scaled x and an unscaled y?
+5) How do I get the predicted values? How do I get the real values? Do they just come from the data?
+
+
+Answer the questions:
+1) Are there a lot of false positives or false negatives? If there are, then that may indicate that the types of accidents aren't distinct, as the regression model we created cannot predict if an accident is type 1 or 2 based on other factors to view, meaning there is no distinction. If there aren't many false positives/negatives, then the regression is distinct.
+2) Depending on the answer, show your confusion matricies. If they are the same we only need one demonstrating that, otherwise we need to compare value 0, 1, and 2 with each other. Either with 3 confusion matricies or 1 3-way confusion matrix. This would need to demonstrate that there are clear differences between them i.e. low false positives/negatives accross them.
+3) Finally, see what columns you can exclude without effecting the outcome of the confusion matrix (These are potentially irrelevent data)
